@@ -30,6 +30,10 @@ public class ChiefOfficer extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
+        btnLoan = new javax.swing.JButton();
+        btnDeathGrant = new javax.swing.JButton();
+        btnSavings = new javax.swing.JButton();
+        btnScholorship = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
@@ -37,6 +41,8 @@ public class ChiefOfficer extends javax.swing.JFrame {
         jMenu1.setText("jMenu1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Prison Department Mutual Provident Fund");
+        setLocationByPlatform(true);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
@@ -44,15 +50,44 @@ public class ChiefOfficer extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
 
+        btnLoan.setText("Loan Account");
+
+        btnDeathGrant.setText("Death Grant Account");
+
+        btnSavings.setText("Savings Account");
+
+        btnScholorship.setText("Scholorship Account");
+        btnScholorship.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnScholorshipActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 582, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap(198, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btnScholorship, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnDeathGrant, javax.swing.GroupLayout.DEFAULT_SIZE, 142, Short.MAX_VALUE)
+                    .addComponent(btnLoan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnSavings, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 189, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 249, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(btnSavings)
+                .addGap(18, 18, 18)
+                .addComponent(btnLoan)
+                .addGap(18, 18, 18)
+                .addComponent(btnDeathGrant)
+                .addGap(18, 18, 18)
+                .addComponent(btnScholorship)
+                .addContainerGap(63, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Account", jPanel2);
@@ -63,7 +98,7 @@ public class ChiefOfficer extends javax.swing.JFrame {
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 582, Short.MAX_VALUE)
+            .addGap(0, 529, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -78,7 +113,7 @@ public class ChiefOfficer extends javax.swing.JFrame {
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 582, Short.MAX_VALUE)
+            .addGap(0, 529, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -93,7 +128,7 @@ public class ChiefOfficer extends javax.swing.JFrame {
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 582, Short.MAX_VALUE)
+            .addGap(0, 529, Short.MAX_VALUE)
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -139,6 +174,10 @@ public class ChiefOfficer extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void btnScholorshipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnScholorshipActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnScholorshipActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -174,6 +213,10 @@ public class ChiefOfficer extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnDeathGrant;
+    private javax.swing.JButton btnLoan;
+    private javax.swing.JButton btnSavings;
+    private javax.swing.JButton btnScholorship;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
