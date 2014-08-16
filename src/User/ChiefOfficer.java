@@ -8,8 +8,6 @@ package User;
  *
  * @author Nishan Gunawardena
  */
-public class User {
-    
-    
+public class ChiefOfficer extends User{
     
 }
